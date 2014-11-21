@@ -86,7 +86,6 @@
       <Name>System</Name>
     </Reference>
     <Reference Condition="'$(Framework)' == 'NET35'" Include="System.Core" />
-    <Reference Include="System.configuration" />
     <Reference Include="System.Xml">
       <Name>System.XML</Name>
     </Reference>

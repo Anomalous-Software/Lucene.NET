@@ -84,14 +84,7 @@ namespace Lucene.Net.Support
                 return (int)settings[key];
             }
 
-            System.String theValue = ConfigurationManager.AppSettings.Get(key);
-            if (theValue == null)
-            {
-                return defValue;
-            }
-            int retValue = Convert.ToInt32(theValue.Trim());
-            settings[key] = retValue;
-            return retValue;
+            return defValue;
         }
 
         /// <summary>
@@ -107,14 +100,7 @@ namespace Lucene.Net.Support
                 return (long)settings[key];
             }
 
-            System.String theValue = ConfigurationManager.AppSettings.Get(key);
-            if (theValue == null)
-            {
-                return defValue;
-            }
-            long retValue = Convert.ToInt64(theValue.Trim());
-            settings[key] = retValue;
-            return retValue;
+            return defValue;
         }
 
         /// <summary>
@@ -130,13 +116,7 @@ namespace Lucene.Net.Support
                 return (System.String)settings[key];
             }
 
-            System.String theValue = ConfigurationManager.AppSettings.Get(key);
-            if (theValue == null)
-            {
-                return defValue;
-            }
-            settings[key] = theValue;
-            return theValue;
+            return defValue;
         }
 
         public static bool Get(System.String key, bool defValue)
@@ -146,14 +126,7 @@ namespace Lucene.Net.Support
                 return (bool)settings[key];
             }
 
-            System.String theValue = ConfigurationManager.AppSettings.Get(key);
-            if (theValue == null)
-            {
-                return defValue;
-            }
-            bool retValue = Convert.ToBoolean(theValue.Trim());
-            settings[key] = retValue;
-            return retValue;
+            return defValue;
         }
     }
 }
