@@ -5,6 +5,7 @@ set SolutionName=build\vs2012\core\Lucene.Net.Core.sln
 set ThisFolder=%~dp0
 set RootDependencyFolder=%ThisFolder%..\
 set BuildCommand="C:\Program Files (x86)\MSBuild\12.0\Bin\msbuild.exe"
+set CurrentDirectory=%CD%
 
 set SolutionPath=%ThisFolder%%SolutionName%
 
