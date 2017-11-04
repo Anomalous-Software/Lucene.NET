@@ -68,7 +68,7 @@ namespace Lucene.Net.Search.Spans
 	/// done using the norms of the field name supplied. This may lead to unexpected
 	/// scoring behaviour.<p/>
 	/// </summary>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public class FieldMaskingSpanQuery:SpanQuery
 	{
 		private SpanQuery maskedQuery;

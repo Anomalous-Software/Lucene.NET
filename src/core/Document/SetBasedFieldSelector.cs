@@ -24,7 +24,7 @@ namespace Lucene.Net.Documents
 	/// 
 	/// 
 	/// </summary>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public class SetBasedFieldSelector : FieldSelector
 	{
 		private ISet<string> fieldsToLoad;

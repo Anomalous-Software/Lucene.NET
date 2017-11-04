@@ -26,7 +26,7 @@ namespace Lucene.Net.Search
 	/// incompatible ways in the next release.
 	/// 
 	/// </summary>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public abstract class FieldComparatorSource
 	{
 		

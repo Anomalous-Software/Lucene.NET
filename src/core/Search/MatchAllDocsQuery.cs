@@ -27,7 +27,7 @@ namespace Lucene.Net.Search
 	/// <summary> A query that matches all documents.
 	/// 
 	/// </summary>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public class MatchAllDocsQuery:Query
 	{
 		
@@ -93,7 +93,7 @@ namespace Lucene.Net.Search
 			}
 		}
 		
-		[Serializable]
+		//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 		private class MatchAllDocsWeight:Weight
 		{
 			private void  InitBlock(MatchAllDocsQuery enclosingInstance)

@@ -24,7 +24,7 @@ namespace Lucene.Net.Analysis.Tokenattributes
 	/// <summary> This attribute can be used to pass different flags down the tokenizer chain,
 	/// eg from one TokenFilter to another one. 
 	/// </summary>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public class FlagsAttribute:Util.Attribute, IFlagsAttribute, System.ICloneable
 	{
 		private int flags = 0;

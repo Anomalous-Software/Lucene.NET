@@ -27,7 +27,7 @@ namespace Lucene.Net.Search.Spans
 {
 	
 	/// <summary>Removes matches which overlap with another SpanQuery. </summary>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public class SpanNotQuery:SpanQuery, System.ICloneable
 	{
 		private class AnonymousClassSpans : Spans

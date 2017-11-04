@@ -36,7 +36,7 @@ namespace Lucene.Net.Search
 	/// <since> 2.9
 	/// </since>
 	
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public class TermRangeQuery:MultiTermQuery
 	{
 		private System.String lowerTerm;

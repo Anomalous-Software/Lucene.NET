@@ -26,7 +26,7 @@ namespace Lucene.Net.Search.Spans
 {
 	
 	/// <summary>Base class for span-based queries. </summary>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public abstract class SpanQuery:Query
 	{
 		/// <summary>Expert: Returns the matches for this query in an index.  Used internally

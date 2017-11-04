@@ -27,7 +27,7 @@ namespace Lucene.Net.Search.Payloads
 	/// 
 	/// 
 	/// </summary>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public class AveragePayloadFunction:PayloadFunction
 	{
 		

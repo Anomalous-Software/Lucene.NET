@@ -289,14 +289,14 @@ namespace Lucene.Net.Search
 	/// </seealso>
 	/// <seealso cref="Searcher.Similarity">
 	/// </seealso>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public abstract class Similarity
 	{
 	    protected Similarity()
 		{
 			InitBlock();
 		}
-		[Serializable]
+		//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 		private class AnonymousClassIDFExplanation1:IDFExplanation
 		{
 			public AnonymousClassIDFExplanation1(int df, int max, float idf, Similarity enclosingInstance)
@@ -334,7 +334,7 @@ namespace Lucene.Net.Search
 		        get { return idf; }
 		    }
 		}
-		[Serializable]
+		//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 		private class AnonymousClassIDFExplanation3:IDFExplanation
 		{
 			public AnonymousClassIDFExplanation3(float fIdf, System.Text.StringBuilder exp, Similarity enclosingInstance)

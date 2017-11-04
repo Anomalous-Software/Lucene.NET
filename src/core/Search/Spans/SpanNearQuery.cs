@@ -30,7 +30,7 @@ namespace Lucene.Net.Search.Spans
 	/// maximum number of intervening unmatched positions, as well as whether
 	/// matches are required to be in-order. 
 	/// </summary>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public class SpanNearQuery : SpanQuery, System.ICloneable
 	{
 		protected internal System.Collections.Generic.IList<SpanQuery> clauses;

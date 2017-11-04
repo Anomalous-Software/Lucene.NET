@@ -39,7 +39,7 @@ namespace Lucene.Net.Search
 	/// <see cref="MultiTermQuery.CONSTANT_SCORE_FILTER_REWRITE" />;
 	/// this is why it is not abstract.
 	/// </summary>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
     public class MultiTermQueryWrapperFilter<T> : Filter
         where T : MultiTermQuery
 	{

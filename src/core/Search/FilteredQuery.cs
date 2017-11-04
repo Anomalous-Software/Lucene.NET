@@ -35,10 +35,10 @@ namespace Lucene.Net.Search
 	/// </summary>
 	/// <since>1.4</since>
 	/// <seealso cref="CachingWrapperFilter"/>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public class FilteredQuery:Query
 	{
-		[Serializable]
+		//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 		private class AnonymousClassWeight:Weight
 		{
 			public AnonymousClassWeight(Lucene.Net.Search.Weight weight, Lucene.Net.Search.Similarity similarity, FilteredQuery enclosingInstance)

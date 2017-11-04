@@ -23,7 +23,7 @@ using Lucene.Net.Support;
 namespace Lucene.Net.Documents
 {
 	/// <summary>A <see cref="FieldSelector" /> based on a Map of field names to <see cref="FieldSelectorResult" />s</summary>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public class MapFieldSelector : FieldSelector
 	{
 		internal IDictionary<string, FieldSelectorResult> fieldSelections;

@@ -96,7 +96,7 @@ namespace Lucene.Net.Search
 	/// <p/>Created: Feb 12, 2004 10:53:57 AM
 	/// 
 	/// </summary>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public class Sort
 	{
 		

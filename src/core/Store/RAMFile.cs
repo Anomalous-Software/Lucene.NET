@@ -20,7 +20,7 @@ using System;
 namespace Lucene.Net.Store
 {
 	
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public class RAMFile
 	{
 		

@@ -92,7 +92,7 @@ namespace Lucene.Net.Search
 		}
 		
 		/// <summary>Thrown when elapsed search time exceeds allowed search time. </summary>
-		[Serializable]
+		//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 		public class TimeExceededException:System.SystemException
 		{
 			private long timeAllowed;

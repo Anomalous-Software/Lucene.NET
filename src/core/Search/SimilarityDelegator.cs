@@ -25,7 +25,7 @@ namespace Lucene.Net.Search
 	/// implementations, to override only certain
 	/// methods of a Searcher's Similiarty implementation.. 
 	/// </summary>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public class SimilarityDelegator:Similarity
 	{
 		private Similarity delegee;

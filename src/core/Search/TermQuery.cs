@@ -29,12 +29,12 @@ namespace Lucene.Net.Search
 	/// <summary>A Query that matches documents containing a term.
 	/// This may be combined with other terms with a <see cref="BooleanQuery" />.
 	/// </summary>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public class TermQuery:Query
 	{
 		private Term term;
 		
-		[Serializable]
+		//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 		private class TermWeight:Weight
 		{
 			private void  InitBlock(TermQuery enclosingInstance)

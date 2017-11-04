@@ -29,7 +29,7 @@ namespace Lucene.Net.Index
 	/// you must open a new reader on the current index to make
 	/// the changes.
 	/// </summary>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public class StaleReaderException:System.IO.IOException
 	{
 		public StaleReaderException(System.String message):base(message)

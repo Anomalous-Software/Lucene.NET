@@ -23,7 +23,7 @@ using System.Runtime.Serialization;
 
 namespace Lucene.Net.Support.Compatibility
 {
-    [Serializable]
+    //[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
     class WrappedHashSet<T> : HashSet<T>, ISet<T>
     {
         public WrappedHashSet()

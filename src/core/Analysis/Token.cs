@@ -114,7 +114,7 @@ namespace Lucene.Net.Analysis
 	/// </summary>
 	/// <seealso cref="Lucene.Net.Index.Payload">
 	/// </seealso>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public class Token : Attribute, ITermAttribute, ITypeAttribute, IPositionIncrementAttribute, IFlagsAttribute, IOffsetAttribute, IPayloadAttribute
 	{
 		public const String DEFAULT_TYPE = "word";

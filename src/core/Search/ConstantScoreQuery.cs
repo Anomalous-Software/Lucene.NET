@@ -25,7 +25,7 @@ namespace Lucene.Net.Search
 	/// <summary> A query that wraps a filter and simply returns a constant score equal to the
 	/// query boost for every document in the filter.
 	/// </summary>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public class ConstantScoreQuery:Query
 	{
 		protected internal Filter internalFilter;
@@ -52,7 +52,7 @@ namespace Lucene.Net.Search
 			// but may not be OK for highlighting
 		}
 		
-		[Serializable]
+		//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 		protected internal class ConstantWeight:Weight
 		{
 			private void  InitBlock(ConstantScoreQuery enclosingInstance)

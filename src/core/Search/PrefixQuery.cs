@@ -31,7 +31,7 @@ namespace Lucene.Net.Search
     /// <see cref="MultiTermQuery.CONSTANT_SCORE_AUTO_REWRITE_DEFAULT"/>
 	/// rewrite method. 
 	/// </summary>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public class PrefixQuery:MultiTermQuery
 	{
 		private Term prefix;

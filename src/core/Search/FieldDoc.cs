@@ -37,7 +37,7 @@ namespace Lucene.Net.Search
 	/// </summary>
 	/// <seealso cref="ScoreDoc"></seealso>
 	/// <seealso cref="TopFieldDocs"></seealso>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public class FieldDoc:ScoreDoc
 	{
 		

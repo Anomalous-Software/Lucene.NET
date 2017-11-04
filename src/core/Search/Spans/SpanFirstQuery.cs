@@ -27,7 +27,7 @@ namespace Lucene.Net.Search.Spans
 {
 	
 	/// <summary>Matches spans near the beginning of a field. </summary>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public class SpanFirstQuery : SpanQuery, System.ICloneable
 	{
 		private class AnonymousClassSpans : Spans

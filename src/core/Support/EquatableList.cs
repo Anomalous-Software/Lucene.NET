@@ -30,7 +30,7 @@ namespace Lucene.Net.Support
     /// to compare lists against each other through an implementations of
     /// <see cref="IEquatable{T}"/>.</summary>
     /// <typeparam name="T">The type of elements in the list.</typeparam>
-    [Serializable]
+    //[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
     public class EquatableList<T> : System.Collections.Generic.List<T>,
                                     IEquatable<System.Collections.Generic.IEnumerable<T>>,
                                     ICloneable

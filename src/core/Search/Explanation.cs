@@ -22,7 +22,7 @@ namespace Lucene.Net.Search
 {
 	
 	/// <summary>Expert: Describes the score computation for document and query. </summary>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public class Explanation
 	{
 		private float value;        // the value of this node
@@ -151,7 +151,7 @@ namespace Lucene.Net.Search
 		/// before storing any large or un-serializable fields.
 		/// 
 		/// </summary>
-		[Serializable]
+		//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 		public abstract class IDFExplanation
 		{
 		    /// <value> the idf factor </value>

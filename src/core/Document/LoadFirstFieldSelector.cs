@@ -23,7 +23,7 @@ namespace Lucene.Net.Documents
 	/// <p/>
 	/// See <see cref="FieldSelectorResult.LOAD_AND_BREAK" />
 	/// </summary>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public class LoadFirstFieldSelector : FieldSelector
 	{
 		

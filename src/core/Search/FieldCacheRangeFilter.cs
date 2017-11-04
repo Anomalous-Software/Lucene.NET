@@ -55,7 +55,7 @@ namespace Lucene.Net.Search
 	
     public static class FieldCacheRangeFilter
 	{
-        [Serializable]
+        //[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
         private class AnonymousClassFieldCacheRangeFilter : FieldCacheRangeFilter<string>
         {
             private class AnonymousClassFieldCacheDocIdSet : FieldCacheDocIdSet
@@ -152,7 +152,7 @@ namespace Lucene.Net.Search
                 return new AnonymousClassFieldCacheDocIdSet(fcsi, inclusiveLowerPoint, inclusiveUpperPoint, this, reader, false);
             }
         }
-        [Serializable]
+        //[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
         private class AnonymousClassFieldCacheRangeFilter1 : FieldCacheRangeFilter<sbyte?>
         {
             private class AnonymousClassFieldCacheDocIdSet : FieldCacheDocIdSet
@@ -225,7 +225,7 @@ namespace Lucene.Net.Search
                 return new AnonymousClassFieldCacheDocIdSet(values, inclusiveLowerPoint, inclusiveUpperPoint, this, reader, (inclusiveLowerPoint <= 0 && inclusiveUpperPoint >= 0));
             }
         }
-        [Serializable]
+        //[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
         private class AnonymousClassFieldCacheRangeFilter2 : FieldCacheRangeFilter<short?>
         {
             private class AnonymousClassFieldCacheDocIdSet : FieldCacheDocIdSet
@@ -298,7 +298,7 @@ namespace Lucene.Net.Search
                 return new AnonymousClassFieldCacheDocIdSet(values, inclusiveLowerPoint, inclusiveUpperPoint, this, reader, (inclusiveLowerPoint <= 0 && inclusiveUpperPoint >= 0));
             }
         }
-        [Serializable]
+        //[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
         private class AnonymousClassFieldCacheRangeFilter3 : FieldCacheRangeFilter<int?>
         {
             private class AnonymousClassFieldCacheDocIdSet : FieldCacheDocIdSet
@@ -371,7 +371,7 @@ namespace Lucene.Net.Search
                 return new AnonymousClassFieldCacheDocIdSet(values, inclusiveLowerPoint, inclusiveUpperPoint, this, reader, (inclusiveLowerPoint <= 0 && inclusiveUpperPoint >= 0));
             }
         }
-        [Serializable]
+        //[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
         private class AnonymousClassFieldCacheRangeFilter4 : FieldCacheRangeFilter<long?>
         {
             private class AnonymousClassFieldCacheDocIdSet : FieldCacheDocIdSet
@@ -444,7 +444,7 @@ namespace Lucene.Net.Search
                 return new AnonymousClassFieldCacheDocIdSet(values, inclusiveLowerPoint, inclusiveUpperPoint, this, reader, (inclusiveLowerPoint <= 0L && inclusiveUpperPoint >= 0L));
             }
         }
-        [Serializable]
+        //[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
         private class AnonymousClassFieldCacheRangeFilter5 : FieldCacheRangeFilter<float?>
         {
             private class AnonymousClassFieldCacheDocIdSet : FieldCacheDocIdSet
@@ -521,7 +521,7 @@ namespace Lucene.Net.Search
                 return new AnonymousClassFieldCacheDocIdSet(values, inclusiveLowerPoint, inclusiveUpperPoint, this, reader, (inclusiveLowerPoint <= 0.0f && inclusiveUpperPoint >= 0.0f));
             }
         }
-        [Serializable]
+        //[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
         private class AnonymousClassFieldCacheRangeFilter6 : FieldCacheRangeFilter<double?>
         {
             private class AnonymousClassFieldCacheDocIdSet : FieldCacheDocIdSet
@@ -717,7 +717,7 @@ namespace Lucene.Net.Search
         }
 	}
 
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public abstract class FieldCacheRangeFilter<T> : Filter
 	{
 		internal System.String field;

@@ -23,7 +23,7 @@ namespace Lucene.Net.Index
 	/// <summary> This exception is thrown when Lucene detects
 	/// an inconsistency in the index.
 	/// </summary>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public class CorruptIndexException:System.IO.IOException
 	{
 		public CorruptIndexException(String message):base(message)

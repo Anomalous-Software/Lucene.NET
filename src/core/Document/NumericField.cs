@@ -141,7 +141,7 @@ namespace Lucene.Net.Documents
 	/// </summary>
 	/// <since> 2.9
 	/// </since>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public sealed class NumericField:AbstractField
 	{
 		

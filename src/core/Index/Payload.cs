@@ -34,7 +34,7 @@ namespace Lucene.Net.Index
 	/// to retrieve the payloads from the index.<br/>
 	/// 
 	/// </summary>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public class Payload : System.ICloneable
 	{
 		/// <summary>the byte array containing the payload data </summary>

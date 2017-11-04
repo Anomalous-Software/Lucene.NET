@@ -43,7 +43,7 @@ namespace Lucene.Net.Search
 	/// synchronize on the <c>IndexSearcher</c> instance;
 	/// use your own (non-Lucene) objects instead.<p/>
 	/// </summary>
-    [Serializable]
+    //[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public class IndexSearcher : Searcher
 	{
 		internal IndexReader reader;

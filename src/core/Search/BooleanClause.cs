@@ -21,7 +21,7 @@ namespace Lucene.Net.Search
 {
 	
 	/// <summary>A clause in a BooleanQuery. </summary>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public class BooleanClause
     {
 	    private Occur occur;

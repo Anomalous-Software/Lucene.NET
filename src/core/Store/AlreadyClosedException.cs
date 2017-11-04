@@ -23,7 +23,7 @@ namespace Lucene.Net.Store
     /// <summary> This exception is thrown when there is an attempt to
     /// access something that has already been closed.
     /// </summary>
-    [Serializable]
+    //[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
     public class AlreadyClosedException : SystemException
     {
         public AlreadyClosedException()

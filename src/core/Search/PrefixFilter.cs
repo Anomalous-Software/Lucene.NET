@@ -25,7 +25,7 @@ namespace Lucene.Net.Search
 	/// <summary> A Filter that restricts search results to values that have a matching prefix in a given
 	/// field.
 	/// </summary>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public class PrefixFilter:MultiTermQueryWrapperFilter<PrefixQuery>
 	{
 		

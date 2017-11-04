@@ -28,7 +28,7 @@ namespace Lucene.Net.Documents
 	/// 
 	/// 
 	/// </summary>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public abstract class AbstractField : IFieldable
 	{
 		

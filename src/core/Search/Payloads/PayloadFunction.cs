@@ -32,7 +32,7 @@ namespace Lucene.Net.Search.Payloads
 	/// 
 	/// 
 	/// </seealso>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public abstract class PayloadFunction
 	{
 		

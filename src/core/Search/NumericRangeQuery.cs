@@ -152,7 +152,7 @@ namespace Lucene.Net.Search
 	/// <since> 2.9
 	/// 
 	/// </since>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public sealed class NumericRangeQuery<T> : MultiTermQuery
         where T : struct, IComparable<T> // best equiv constraint for java's number class
 	{

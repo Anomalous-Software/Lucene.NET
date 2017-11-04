@@ -31,7 +31,7 @@ namespace Lucene.Net.Search
 	/// 
 	/// <p/>This query may be combined with other terms or queries with a <see cref="BooleanQuery" />.
 	/// </summary>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public class PhraseQuery:Query
 	{
 		private System.String field;
@@ -115,7 +115,7 @@ namespace Lucene.Net.Search
 			return result;
 		}
 		
-		[Serializable]
+		//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 		private class PhraseWeight:Weight
 		{
 			private void  InitBlock(PhraseQuery enclosingInstance)

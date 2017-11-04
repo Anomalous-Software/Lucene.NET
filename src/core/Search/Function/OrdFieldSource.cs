@@ -52,7 +52,7 @@ namespace Lucene.Net.Search.Function
 	/// (single segment) readers to this API.<p/>
 	/// </summary>
 	
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public class OrdFieldSource:ValueSource
 	{
 		private class AnonymousClassDocValues:DocValues

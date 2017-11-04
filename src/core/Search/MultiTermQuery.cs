@@ -54,10 +54,10 @@ namespace Lucene.Net.Search
 	/// MultiTermQueries using <see cref="CONSTANT_SCORE_AUTO_REWRITE_DEFAULT" />
 	/// by default.
 	/// </summary>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public abstract class MultiTermQuery:Query
 	{
-		[Serializable]
+		//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 		public class AnonymousClassConstantScoreAutoRewrite:ConstantScoreAutoRewrite
 		{
 		    public override int TermCountCutoff
@@ -80,7 +80,7 @@ namespace Lucene.Net.Search
 		[NonSerialized]
 		internal int numberOfTerms = 0;
 
-	    [Serializable]
+	    //[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 		private sealed class ConstantScoreFilterRewrite:RewriteMethod
 		{
 			public override Query Rewrite(IndexReader reader, MultiTermQuery query)
@@ -113,7 +113,7 @@ namespace Lucene.Net.Search
 		/// </seealso>
 		public static readonly RewriteMethod CONSTANT_SCORE_FILTER_REWRITE = new ConstantScoreFilterRewrite();
 		
-		[Serializable]
+		//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 		private class ScoringBooleanQueryRewrite:RewriteMethod
 		{
 			public override Query Rewrite(IndexReader reader, MultiTermQuery query)
@@ -169,7 +169,7 @@ namespace Lucene.Net.Search
 		/// </seealso>
 		public static readonly RewriteMethod SCORING_BOOLEAN_QUERY_REWRITE = new ScoringBooleanQueryRewrite();
 		
-		[Serializable]
+		//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 		private class ConstantScoreBooleanQueryRewrite:ScoringBooleanQueryRewrite
 		{
 			public override Query Rewrite(IndexReader reader, MultiTermQuery query)
@@ -210,7 +210,7 @@ namespace Lucene.Net.Search
 		/// Otherwise, <see cref="CONSTANT_SCORE_FILTER_REWRITE" /> is
 		/// used.
 		/// </summary>
-		[Serializable]
+		//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 		public class ConstantScoreAutoRewrite:RewriteMethod
 		{
 			public ConstantScoreAutoRewrite()
@@ -457,7 +457,7 @@ namespace Lucene.Net.Search
 	}
 
     /// <summary>Abstract class that defines how the query is rewritten. </summary>
-    [Serializable]
+    //[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
     public abstract class RewriteMethod
     {
         public abstract Query Rewrite(IndexReader reader, MultiTermQuery query);

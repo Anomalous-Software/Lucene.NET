@@ -25,7 +25,7 @@ namespace Lucene.Net.Store
 	/// </summary>
 	/// <seealso cref="Lock.Release()">
 	/// </seealso>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public class LockReleaseFailedException:System.IO.IOException
 	{
 		public LockReleaseFailedException(System.String message):base(message)

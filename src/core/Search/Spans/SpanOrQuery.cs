@@ -28,7 +28,7 @@ namespace Lucene.Net.Search.Spans
 {
 	
 	/// <summary>Matches the union of its clauses.</summary>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public class SpanOrQuery : SpanQuery, System.ICloneable
 	{
 		private class AnonymousClassSpans : Spans

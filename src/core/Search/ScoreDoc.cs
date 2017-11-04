@@ -23,7 +23,7 @@ namespace Lucene.Net.Search
 	/// <summary>Expert: Returned by low-level search implementations.</summary>
 	/// <seealso cref="TopDocs">
 	/// </seealso>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public class ScoreDoc
 	{
         /// <summary>Expert: The score of this document for the query. </summary>

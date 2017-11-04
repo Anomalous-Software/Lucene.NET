@@ -203,7 +203,7 @@ namespace Lucene.Net.Index
 		/// <summary>Exception thrown if there are any problems while
 		/// executing a merge. 
 		/// </summary>
-		[Serializable]
+		//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 		public class MergeException:System.SystemException
 		{
 			private readonly Directory dir;
@@ -227,7 +227,7 @@ namespace Lucene.Net.Index
 		    }
 		}
 		
-		[Serializable]
+		//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 		public class MergeAbortedException:System.IO.IOException
 		{
 			public MergeAbortedException():base("merge is aborted")

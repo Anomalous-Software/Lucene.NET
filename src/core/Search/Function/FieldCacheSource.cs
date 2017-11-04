@@ -46,7 +46,7 @@ namespace Lucene.Net.Search.Function
 	/// best to switch your application to pass only atomic
 	/// (single segment) readers to this API.<p/>
 	/// </summary>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public abstract class FieldCacheSource:ValueSource
 	{
 		private System.String field;

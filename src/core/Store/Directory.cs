@@ -38,7 +38,7 @@ namespace Lucene.Net.Store
 	/// instance using <see cref="SetLockFactory" />.
 	/// 
 	/// </summary>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public abstract class Directory : System.IDisposable
 	{
 		protected internal volatile bool isOpen = true;

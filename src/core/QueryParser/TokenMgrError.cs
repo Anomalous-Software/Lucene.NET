@@ -24,7 +24,7 @@ namespace Lucene.Net.QueryParsers
 {
 	
 	/// <summary>Token Manager Error. </summary>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public class TokenMgrError:System.ApplicationException
 	{
 		/// <summary> You can also modify the body of this method to customize your error messages.

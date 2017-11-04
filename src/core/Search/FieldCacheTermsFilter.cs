@@ -93,7 +93,7 @@ namespace Lucene.Net.Search
 	/// Which filter is best is very application dependent.
 	/// </summary>
 	
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public class FieldCacheTermsFilter:Filter
 	{
 		private readonly string field;

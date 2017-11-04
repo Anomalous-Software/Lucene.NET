@@ -46,7 +46,7 @@ namespace Lucene.Net.Analysis.Tokenattributes
 	/// 
 	/// </list>
 	/// </summary>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public class PositionIncrementAttribute:Attribute, IPositionIncrementAttribute, System.ICloneable
 	{
 		private int positionIncrement = 1;

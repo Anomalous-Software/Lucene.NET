@@ -38,7 +38,7 @@ namespace Lucene.Net.Search
 	/// </summary>
 	/// <seealso cref="WildcardTermEnum">
 	/// </seealso>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public class WildcardQuery : MultiTermQuery
 	{
 		private readonly bool _termContainsWildcard;

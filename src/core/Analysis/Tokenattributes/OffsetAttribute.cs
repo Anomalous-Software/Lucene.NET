@@ -22,7 +22,7 @@ namespace Lucene.Net.Analysis.Tokenattributes
 {
 	
 	/// <summary> The start and end character offset of a Token. </summary>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public class OffsetAttribute:Attribute, IOffsetAttribute, System.ICloneable
 	{
 		private int startOffset;

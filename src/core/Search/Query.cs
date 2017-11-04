@@ -43,7 +43,7 @@ namespace Lucene.Net.Search
     /// <item><see cref="Lucene.Net.QueryParsers.QueryParser">QueryParser</see> </item>
 	/// </list>
 	/// </summary>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public abstract class Query : System.ICloneable
 	{
 		private float boost = 1.0f; // query boost factor

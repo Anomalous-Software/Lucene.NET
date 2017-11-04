@@ -23,7 +23,7 @@ namespace Lucene.Net.Search
 	/// <summary> A DocIdSet contains a set of doc ids. Implementing classes must
 	/// only implement <see cref="Iterator" /> to provide access to the set. 
 	/// </summary>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public abstract class DocIdSet
 	{
 		public class AnonymousClassDocIdSet:DocIdSet

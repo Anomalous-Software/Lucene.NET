@@ -24,7 +24,7 @@ namespace Lucene.Net.Index
 	/// 
 	/// 
 	/// </summary>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public class FieldReaderException:System.SystemException
 	{
 		/// <summary> Constructs a new runtime exception with <c>null</c> as its

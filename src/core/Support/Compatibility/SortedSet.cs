@@ -19,7 +19,7 @@
 
 namespace System.Collections.Generic
 {
-    [Serializable]
+    //[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
     public class SortedSet<T> : ISet<T>, ICollection
     {
         private readonly SortedList<T, byte> _list;

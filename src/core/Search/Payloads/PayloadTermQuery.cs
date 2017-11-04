@@ -46,7 +46,7 @@ namespace Lucene.Net.Search.Payloads
 	/// Payload scores are aggregated using a pluggable <see cref="PayloadFunction" />.
 	/// 
 	/// </summary>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public class PayloadTermQuery:SpanTermQuery
 	{
 		protected internal PayloadFunction function;
@@ -67,7 +67,7 @@ namespace Lucene.Net.Search.Payloads
 			return new PayloadTermWeight(this, this, searcher);
 		}
 		
-		[Serializable]
+		//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 		protected internal class PayloadTermWeight:SpanWeight
 		{
 			private void  InitBlock(PayloadTermQuery enclosingInstance)

@@ -37,7 +37,7 @@ namespace Lucene.Net.Search
 	/// cause an edit score calculation.
 	/// 
 	/// </summary>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public class FuzzyQuery : MultiTermQuery
 	{
 		

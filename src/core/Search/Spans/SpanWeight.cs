@@ -26,7 +26,7 @@ namespace Lucene.Net.Search.Spans
 {
 	
 	/// <summary> Expert-only.  Public for use by other weight implementations</summary>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public class SpanWeight:Weight
 	{
 		protected internal Similarity similarity;

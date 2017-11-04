@@ -31,7 +31,7 @@ namespace Lucene.Net.Documents
     /// index, so that they may be returned with hits on the document.
     /// </summary>
     
-    [Serializable]
+    //[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
     public sealed class Field:AbstractField, IFieldable
     {
         /// <summary>Specifies whether and how a field should be stored. </summary>

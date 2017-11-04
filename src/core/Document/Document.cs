@@ -38,7 +38,7 @@ namespace Lucene.Net.Documents
 	/// <see cref="Searcher.Doc(int)" /> or <see cref="IndexReader.Document(int)" />.
 	/// </summary>
 	
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public sealed class Document
 	{
 		private class AnonymousClassEnumeration : System.Collections.IEnumerator

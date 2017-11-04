@@ -23,7 +23,7 @@ namespace Lucene.Net.Search
 {
 	
 	/// <summary>Expert: Default scoring implementation. </summary>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public class DefaultSimilarity:Similarity
 	{
 		

@@ -25,7 +25,7 @@ namespace Lucene.Net.Store
     /// implementation is by default the <see cref="SingleInstanceLockFactory"/>
     /// but can be changed with <see cref="Directory.SetLockFactory"/>.
 	/// </summary>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public class RAMDirectory:Directory
 	{
 		

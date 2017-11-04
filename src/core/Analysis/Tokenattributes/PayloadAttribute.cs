@@ -23,7 +23,7 @@ namespace Lucene.Net.Analysis.Tokenattributes
 {
 	
 	/// <summary> The payload of a Token. See also <see cref="Payload" />.</summary>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public class PayloadAttribute:Attribute, IPayloadAttribute, System.ICloneable
 	{
 		private Payload payload;

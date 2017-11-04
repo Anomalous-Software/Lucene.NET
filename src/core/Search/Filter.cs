@@ -24,7 +24,7 @@ namespace Lucene.Net.Search
 {
 	
 	/// <summary>Abstract base class for restricting which documents may be returned during searching.</summary>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public abstract class Filter
 	{
 	    ///<summary>

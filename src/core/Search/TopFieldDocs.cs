@@ -23,7 +23,7 @@ namespace Lucene.Net.Search
 	/// <summary>
 	/// Represents hits returned by <see cref="Searcher.Search(Query,Filter,int,Sort)" />.
 	/// </summary>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public class TopFieldDocs:TopDocs
 	{
 		

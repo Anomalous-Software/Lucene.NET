@@ -33,7 +33,7 @@ namespace Lucene.Net.Search
 	/// </summary>
 	/// <since> 2.9
 	/// </since>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public class TermRangeFilter:MultiTermQueryWrapperFilter<TermRangeQuery>
 	{
 		

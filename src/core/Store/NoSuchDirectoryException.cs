@@ -24,7 +24,7 @@ namespace Lucene.Net.Store
 	/// non-existent directory.
 	/// </summary>
 	
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public class NoSuchDirectoryException:System.IO.FileNotFoundException
 	{
 		public NoSuchDirectoryException(System.String message):base(message)

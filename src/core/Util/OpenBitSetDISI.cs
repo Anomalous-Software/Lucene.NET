@@ -22,7 +22,7 @@ using DocIdSetIterator = Lucene.Net.Search.DocIdSetIterator;
 namespace Lucene.Net.Util
 {
 	
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public class OpenBitSetDISI:OpenBitSet
 	{
 		

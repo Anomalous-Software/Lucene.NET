@@ -77,7 +77,7 @@ namespace Lucene.Net.Util
 	/// <version>  $Id$
 	/// </version>
 	
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public class OpenBitSet:DocIdSet, System.ICloneable
 	{
 		protected internal long[] internalbits;

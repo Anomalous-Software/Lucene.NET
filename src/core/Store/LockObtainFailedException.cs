@@ -27,7 +27,7 @@ namespace Lucene.Net.Store
 	/// </summary>
 	/// <seealso cref="Lock.Obtain(long)">
 	/// </seealso>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public class LockObtainFailedException:System.IO.IOException
 	{
 		public LockObtainFailedException(System.String message):base(message)

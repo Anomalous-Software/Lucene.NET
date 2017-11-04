@@ -37,7 +37,7 @@ namespace Lucene.Net.Search
 	/// </summary>
 	/// <version>  $Id:$
 	/// </version>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public class SpanQueryFilter:SpanFilter
 	{
 		protected internal SpanQuery internalQuery;

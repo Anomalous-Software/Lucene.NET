@@ -193,7 +193,7 @@ namespace Lucene.Net.Search
         }
     }
 
-    [Serializable]
+    //[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
     class AnonymousClassByteParser : ByteParser
     {
         public virtual sbyte ParseByte(System.String value_Renamed)
@@ -209,7 +209,7 @@ namespace Lucene.Net.Search
             return typeof(FieldCache).FullName + ".DEFAULT_BYTE_PARSER";
         }
     }
-    [Serializable]
+    //[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
     class AnonymousClassShortParser : ShortParser
     {
         public virtual short ParseShort(System.String value_Renamed)
@@ -225,7 +225,7 @@ namespace Lucene.Net.Search
             return typeof(FieldCache).FullName + ".DEFAULT_SHORT_PARSER";
         }
     }
-    [Serializable]
+    //[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
     class AnonymousClassIntParser : IntParser
     {
         public virtual int ParseInt(System.String value_Renamed)
@@ -241,7 +241,7 @@ namespace Lucene.Net.Search
             return typeof(FieldCache).FullName + ".DEFAULT_INT_PARSER";
         }
     }
-    [Serializable]
+    //[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
     class AnonymousClassFloatParser : FloatParser
     {
         public virtual float ParseFloat(System.String value_Renamed)
@@ -264,7 +264,7 @@ namespace Lucene.Net.Search
             return typeof(FieldCache).FullName + ".DEFAULT_FLOAT_PARSER";
         }
     }
-    [Serializable]
+    //[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
     class AnonymousClassLongParser : LongParser
     {
         public virtual long ParseLong(System.String value_Renamed)
@@ -280,7 +280,7 @@ namespace Lucene.Net.Search
             return typeof(FieldCache).FullName + ".DEFAULT_LONG_PARSER";
         }
     }
-    [Serializable]
+    //[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
     class AnonymousClassDoubleParser : DoubleParser
     {
         public virtual double ParseDouble(System.String value_Renamed)
@@ -296,7 +296,7 @@ namespace Lucene.Net.Search
             return typeof(FieldCache).FullName + ".DEFAULT_DOUBLE_PARSER";
         }
     }
-    [Serializable]
+    //[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
     class AnonymousClassIntParser1 : IntParser
     {
         public virtual int ParseInt(System.String val)
@@ -315,7 +315,7 @@ namespace Lucene.Net.Search
             return typeof(FieldCache).FullName + ".NUMERIC_UTILS_INT_PARSER";
         }
     }
-    [Serializable]
+    //[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
     class AnonymousClassFloatParser1 : FloatParser
     {
         public virtual float ParseFloat(System.String val)
@@ -334,7 +334,7 @@ namespace Lucene.Net.Search
             return typeof(FieldCache).FullName + ".NUMERIC_UTILS_FLOAT_PARSER";
         }
     }
-    [Serializable]
+    //[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
     class AnonymousClassLongParser1 : LongParser
     {
         public virtual long ParseLong(System.String val)
@@ -353,7 +353,7 @@ namespace Lucene.Net.Search
             return typeof(FieldCache).FullName + ".NUMERIC_UTILS_LONG_PARSER";
         }
     }
-    [Serializable]
+    //[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
     class AnonymousClassDoubleParser1 : DoubleParser
     {
         public virtual double ParseDouble(System.String val)

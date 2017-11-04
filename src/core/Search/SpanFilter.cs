@@ -29,7 +29,7 @@ namespace Lucene.Net.Search
 	/// and then you entered a new SpanQuery containing bar, you could not only filter by the word foo, but you could
 	/// then compare position information for post processing.
 	/// </summary>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public abstract class SpanFilter:Filter
 	{
 		/// <summary>Returns a SpanFilterResult with true for documents which should be permitted in

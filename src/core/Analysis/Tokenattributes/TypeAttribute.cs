@@ -22,7 +22,7 @@ namespace Lucene.Net.Analysis.Tokenattributes
 {
 	
 	/// <summary> A Token's lexical type. The Default value is "word". </summary>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public class TypeAttribute:Attribute, ITypeAttribute, System.ICloneable
 	{
 		private System.String type;

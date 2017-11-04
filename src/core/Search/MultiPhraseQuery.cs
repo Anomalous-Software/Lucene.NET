@@ -36,7 +36,7 @@ namespace Lucene.Net.Search
 	/// </summary>
 	/// <version>  1.0
 	/// </version>
-	[Serializable]
+	//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 	public class MultiPhraseQuery:Query
 	{
 		private System.String field;
@@ -131,7 +131,7 @@ namespace Lucene.Net.Search
 		}
 		
 		
-		[Serializable]
+		//[Serializable] //Disabled for https://github.com/dotnet/standard/issues/300
 		private class MultiPhraseWeight:Weight
 		{
 			private void  InitBlock(MultiPhraseQuery enclosingInstance)
